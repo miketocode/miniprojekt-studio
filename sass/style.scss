@@ -1,0 +1,256 @@
+/* Variables */
+
+$color-one: red;
+
+$font-roboto:'Roboto', sans-serif;
+$font-brandname:'Dancing Script', cursive;
+$font-serif: 'Playfair Display', serif;
+
+$italic: italic;
+
+// Global
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// Navigation
+
+.navigation {
+    width: 100%;
+    height: 600px;
+    max-width: 1024px;
+    text-align: center;
+    position: relative;
+    font-family: $font-roboto;
+
+}
+
+.bg-image {
+    background-image: url('https://cdn.pixabay.com/photo/2015/05/15/14/31/amplifier-768536_960_720.jpg');
+    object-fit: cover;
+    width: auto;
+    height: 600px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 34px;
+    color: white;
+}
+
+.navigation .btn {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navigation .btn-one {
+    min-width: 160px;
+    height: 40px;
+    background-color: gold;
+    cursor: pointer;
+    border-radius: 5px;
+    // border-width: 1px;
+    // border-style: solid;
+    border-color: black;
+    text-align: center;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    transition: linear 0.5s;
+    line-height: 40px;
+}
+
+.btn-one:hover {
+    color: white;
+    background-color: black;
+    transition: linear 0.5s;
+    
+}
+
+.navigation .page-title {
+    font-family: $font-serif;
+    font-size: 34px;
+    padding-bottom: 40px;
+}
+
+.navigation .page-subtitle {
+    font-size: 54px;
+    padding-bottom: 40px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav-items a {
+    padding: 0 20px;
+    padding-top: 40px;
+    font-size: 16px;
+}
+
+.nav-items a:hover {
+    color: gold;
+}
+
+.navigation .nav-items, .nav-brand {
+    padding-top: 40px;
+}
+
+.nav-brand a {
+    color: gold;
+    text-transform: none;
+    margin-top: 40px;
+    font-family: $font-brandname;
+    font-size: 30px;
+}
+
+
+// Services
+
+.service-title h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $font-roboto;
+    font-size: 34px;
+}
+
+.service-title h2 {
+    text-align: center;
+    font-family: $font-serif;
+    color: gray;
+    font-size: 26px;
+}
+
+.service-title {
+    padding: 60px;
+}
+
+.services .circle {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border-color: gold;
+    border-width: solid 3px;
+    border-radius: 50%;
+    border-style: solid;
+    left: 50%;
+    transform: translateX(-50%);    
+}
+
+.services .circle i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: gold;
+    font-size: 30px;
+}
+
+.services .service-item h2 {
+    font-family: $font-roboto; 
+    font-size: 24px;
+    text-align: center;
+    padding: 50px;
+}
+
+.services .service-item p {
+    font-family: $font-serif; 
+    color: gray;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+// Portfolio
+
+.portfolio {
+    background-color: gainsboro;
+}
+
+.boxes {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio .box {
+    height: 350px;
+    margin-bottom: 80px;
+}
+
+.box .box-image {
+    height: 100%;
+    justify-content: center;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.box .box-items {
+    font-size: 14px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    font-family: $font-roboto;
+    font-size: 18px;
+    padding-top: 12px;
+}
+
+// Footer
+
+footer {
+    background-color: gray;
+    width: 100%;
+    height: 80px;
+}
+
+.footer-text {
+    text-align: center;
+    font-family: $font-serif;
+    font-size: 18px;
+    color: darkgrey;
+    line-height: 80px;
+    
+}
+
+.footer-item {
+    line-height: 80px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+}
+
+footer .circle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.footer-item i{
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
