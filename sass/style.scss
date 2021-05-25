@@ -25,13 +25,12 @@ $italic: italic;
     text-align: center;
     position: relative;
     font-family: $font-roboto;
-
 }
 
 .bg-image {
     background-image: url('https://cdn.pixabay.com/photo/2015/05/15/14/31/amplifier-768536_960_720.jpg');
     object-fit: cover;
-    width: auto;
+    max-width: 1920px !important;
     height: 600px;
     background-size: cover;
     background-position: center center;
@@ -88,6 +87,10 @@ $italic: italic;
 .navigation .page-subtitle {
     font-size: 54px;
     padding-bottom: 40px;
+}
+
+.navigation .nav-items {
+    flex-wrap: nowrap;
 }
 
 .navigation a {
@@ -187,8 +190,14 @@ $italic: italic;
 }
 
 .portfolio .box {
-    height: 350px;
+    height: 400px;
     margin-bottom: 80px;
+}
+
+.box {
+    // background-color: white;
+    // padding-right: 0 !important;
+    // padding-left: 0 !important;
 }
 
 .box .box-image {
@@ -205,11 +214,11 @@ $italic: italic;
 .box .box-items {
     font-size: 14px;
     width: 100%;
-    background-color: white;
     text-align: center;
     font-family: $font-roboto;
     font-size: 18px;
-    padding-top: 12px;
+    background-color: white;
+
 }
 
 // Footer
@@ -217,7 +226,7 @@ $italic: italic;
 footer {
     background-color: gray;
     width: 100%;
-    height: 80px;
+    height: 120px;
 }
 
 .footer-text {
@@ -225,12 +234,12 @@ footer {
     font-family: $font-serif;
     font-size: 18px;
     color: darkgrey;
-    line-height: 80px;
+    line-height: 120px;
     
 }
 
 .footer-item {
-    line-height: 80px;
+    line-height: 120px;
     align-items: center;
     text-align: center;
     display: flex;
@@ -253,4 +262,44 @@ footer .circle {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+// Media
+
+@media (max-width: 991px) {
+
+    .navigation .nav-items a {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .navigation .page-title {
+        font-size: 28px;
+    }
+
+    .navigation .page-subtitle {
+        font-size: 38px;
+    }
+
+    .service-title h1 {
+        font-size: 26px;
+    }
+
+    .service-title h2 {
+        font-size: 20px;
+    }
+
+    .footer-text {
+        font-size: 10px;
+    }
+
+    .footer-item i {
+        font-size: 16px;
+    }
+
+    footer .circle {
+        width: 30px;
+        height: 30px;
+    }
+
 }
