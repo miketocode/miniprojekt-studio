@@ -190,18 +190,18 @@ $italic: italic;
 }
 
 .portfolio .box {
-    height: 400px;
+    height: 300px;
     margin-bottom: 80px;
 }
 
-.box {
-    // background-color: white;
-    // padding-right: 0 !important;
-    // padding-left: 0 !important;
-}
+// .box {
+//     background-color: white;
+//     padding-right: 0 !important;
+//     padding-left: 0 !important;
+// }
 
 .box .box-image {
-    height: 100%;
+    height: calc(100% - 100px);
     justify-content: center;
 }
 
@@ -218,7 +218,8 @@ $italic: italic;
     font-family: $font-roboto;
     font-size: 18px;
     background-color: white;
-
+    height: 100px;
+    padding: 20px;
 }
 
 // Footer
